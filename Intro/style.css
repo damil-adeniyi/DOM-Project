@@ -1,0 +1,322 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Helvetica ;
+    src: url(Helvetica.woff);
+}
+
+@font-face {
+    font-family: 'helvetica-light';
+    src: url(helvetica-light.woff);
+}
+
+ol, ul {
+    list-style: none;
+  }
+
+body{
+    background:rgb(55, 55, 182);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
+}
+
+/* 
+===================================
+ Style for Favorite Movies Franchise
+===================================
+*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+
+#main-heading{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'helvetica-light';
+    font-size: 2em;
+    width: 100%;
+}
+
+ul{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 3px;
+    padding: 5px 0;  
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+
+/* 
+===============================
+Event Listener
+==============================
+*/
+
+.container-1{
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+#main-heading-1{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'helvetica-light';
+    font-size: 3.5em;
+    width: 100%;
+}
+
+.btn{
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 4px 10px;
+    cursor: pointer;
+    display: block;
+    font-size: 1.5em;
+    transition: all .1s linear;
+}
+
+.btn:hover{
+    border-radius: 7px;
+    color: #006599;
+    background-color: #ffffff;
+}
+
+.btn:active{
+    box-shadow: 0 5px 0 rgb(19, 8, 119);
+    transform: translateY(3px);
+}
+
+.boxes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid white;
+    width: 25%;
+    height: 250px;
+    border-radius: 15px;
+}
+
+#heading{
+    text-align: center;
+    color: white;
+    font-family: 'helvetica light';
+    font-size: 2em;
+    
+}
+
+/* 
+===============================
+Event Listener-1
+==============================
+*/
+
+.container-3{
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.container-4{
+    /* border: 1px solid white; */
+    border-radius: 15px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box{
+    width: 20%;
+    height: 50%;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: transparent;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    
+    transition: all .1s linear;
+}
+
+.box:hover{
+    color: rgb(8, 8, 149);
+}
+
+.box:active {
+    box-shadow: 0 4px 0 rgb(19, 8, 119);
+    transform: translateY(3px);
+  }
+
+.boxes-1{
+    width: 75%;
+    height: 50%;
+    border: 1px solid white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    color: white;
+}
+
+.hidden-content{
+    display: none;
+
+}
+
+.hidden-content.reveal-btn{
+    display: flex;
+}
+
+ 
+/* 
+=================================
+Event Propagation
+================================= 
+*/
+
+.div2{
+    width: 35%;
+    height: 300px;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 2em;
+}
+
+.div1{
+    width: 60%;
+    height: 60%;
+    border: 5px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button{
+    background-color: rgb(55, 55, 182);
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid white ;
+    font-size: .7em;
+    /* font-weight: 700; */
+    transition: all .1s linear;
+    cursor: pointer;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: white;
+    color: #006599;
+    border: 2px solid #006599;
+}
+
+button:active{
+    box-shadow: 0 3px 0 #000000;
+    transform: translateY(3px);
+}
+
+/* 
+===================================
+ Event Delegation
+===================================
+*/
+.sports{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+ul{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sport{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 4px;
+    padding: 5px 0;  
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+}

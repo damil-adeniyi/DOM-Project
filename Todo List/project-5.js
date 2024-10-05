@@ -41,12 +41,12 @@ addTask.addEventListener('click', function(){
     checkButton.addEventListener('click', function(){
 
         checkButton.parentElement.style.textDecoration = 
-        'line-trough';
+        'line-through';
 
     });
 
 
-    deleteButton.addEventListener('click', function(){
+    deleteButton.addEventListener('click', function(e){
 
         let target = e.target;
 
